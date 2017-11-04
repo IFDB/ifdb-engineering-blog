@@ -37,7 +37,7 @@ canonifyurls = true
   job = ""
   location = "Los Angeles, CA"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  # gravatarEmail = "matt.dorn@gmail.com"
+  # gravatarEmail = ""
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
   picture = "https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAPjAAAAJDlkMmVjNDIwLTlkOWEtNDA0Yi05YmJmLTAzY2U1Y2IzYTBjMA.png"

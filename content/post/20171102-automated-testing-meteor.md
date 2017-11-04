@@ -158,7 +158,7 @@ Integration tests are useful for ensuring that two or more distinct components w
 
 ### End-to-end/acceptance/browser testing
 
-Writing and running these tests differs from what we've seen so far in that they don't rely on anything Meteor-specific (with one exception which you'll see below).  Tests are still written using Mocha, but you'll make use of [Chimp](https://chimp.readme.io/) to drive a browser instance to perform user actions (clicks, form input and the lake) and test that the results are as expected.
+Writing and running these tests differs from what we've seen so far in that they don't rely on anything Meteor-specific (with one exception which you'll see below).  Tests are still written using Mocha, but you'll make use of [Chimp](https://chimp.readme.io/) to drive a browser instance to perform user actions (clicks, form input and the like) and test that the results are as expected.
 
 You'll instruct Chimp on where to find these tests when you run it, so you don't need to follow Meteor test naming conventions.  It's best to keep these tests outside of your app directory.  Here's an example of a simple test located at `tests/features/login.js` in a Meteor project directory:
 
