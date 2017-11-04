@@ -184,7 +184,7 @@ The resulting JSON document a couple of key pieces of information, only one of w
 
     cat /tmp/distconfig_result.json | jq .Distribution.DomainName
 
-If you want to update anything in the config, you can do so by getting the ID and ETag of the newly created distro:
+That value will look something like `d329sw4e8bbqcz.cloudfront.net`.  If you want to update anything in the config, you can do so by getting the ID and ETag of the newly created distro:
 
     cat /tmp/distconfig_result.json | jq .Distribution.Id
     cat /tmp/distconfig_result.json | jq .ETag

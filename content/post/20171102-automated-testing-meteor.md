@@ -196,7 +196,7 @@ describe('login', () => {
 A couple of things to note here:
 
 - Depending on the complexity of your app, the performance characteristics of your test environment, etc. your components may or may not render in the time expected by `waitForExist`.  You can adjust the timeout on this call if needed, e.g.     `browser.waitForExist('.dashboard', 1000)`.
-- Note the line that says `server.call('generateFixtures');` in the code that runs before any tests are executed.  `server` is a Meteor-specific object that allows you to call Meteor methods to via DDP.  In this case we have a `generateFixtures` method that is [only available](https://github.com/tmeasday/acceptance-test-driver) when the app is run in test mode.  When it's executed, the Meteor test database is cleared, and some test fixture data is loaded into the database.
+- Note the line that says `server.call('generateFixtures');` in the code that runs before any tests are executed.  `server` is a Meteor-specific object that allows you to call Meteor methods via DDP.  In this case we have a `generateFixtures` method that is [only available](https://github.com/tmeasday/acceptance-test-driver) when the app is run in test mode.  When it's executed, the Meteor test database is cleared, and some test fixture data is loaded into the database.
 
 > **WARNING**: It's important to make sure the `generateFixtures` method is only available in test mode, in part because this kind of function normally clears the active database.  Take a look at the [`tmeasday:acceptance-test-driver` package](https://github.com/tmeasday/acceptance-test-driver).
 
